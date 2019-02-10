@@ -22,7 +22,7 @@ marketCap_list = []
 volume24h_list = []
 circulatingSupply_list = []
 
-## For getting all names and price.
+## For getting all names and price and the other data.
 for k in range(0,100):
 
     name_element = name[k].get_text()
@@ -50,4 +50,6 @@ myCurrencyTable = pd.concat([dataframe_coinName, dataframe_price, dataframe_mark
 
 ## Let's see our beautiful data.
 print(myCurrencyTable)
-    
+
+## Maybe you cannot see that output clearly. Because there are many data, your IDE can't show it clearly. Use Spyder,
+## you can see myCurrencyTable dataframe in Value Explorer box. Click on it. You will see myCurrencyTable dataframe.
